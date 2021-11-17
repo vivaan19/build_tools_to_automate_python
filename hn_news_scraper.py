@@ -17,7 +17,7 @@ It can be done through web scraping.
 4. Here the scraping task is done, next is to send the output to our mail.
 
 5. It can be done by providing SERVER, PORT, FROM, TO, PASS; server would be the email service which 
-   we are using ; port number is constant ; form is the email of sender ; to is the email of reciever in 
+   we are using ; port number is constant ; from is the email of sender ; to is the email of reciever in 
    this case we are only sending to us ; pass is the password for sending email. 
 
 6. Then we have to make our message and initialize the server. 
@@ -31,7 +31,8 @@ import requests # for http requests
 from bs4 import BeautifulSoup # for web scraping
 
 # for sending the mail
-import smtplib
+# standard mail transfer protocol lib
+import smtplib 
 
 # email body
 from email.mime.multipart import MIMEMultipart
